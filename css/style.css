@@ -32,6 +32,7 @@
 }
 
 .chess li {
+	position: relative;
 	width: 12.5%;
 	height: 100%;
 	list-style: none;
@@ -56,4 +57,17 @@
 
 .white li {
 	background-color: #e0d4d4;
+}
+
+li::after {
+	content: "";
+    width: 77%;
+    height: 77%;
+    border: 1px solid #201d1f;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
